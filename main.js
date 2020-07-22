@@ -1,6 +1,10 @@
-$('.fa-bars').click(function(){
+var bool = true;
+$('.fas').click(function(){
+    if(bool == true){
     $('.hamburger-menu').fadeIn(200);
-});
-$('.fa-times').click(function(){
+    bool = false;
+}else{
     $('.hamburger-menu').fadeOut(200);
+    bool = true;
+}
 });
